@@ -5,13 +5,14 @@ import static com.iv1201.client.controller.LoginController.isAuthenticated;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * If an user tries to go to a nonexistent page, they will be redirected to the
  * front page with an error
  * @author Zarcez
  */
-@Controller
+@RestController
 public class CustomErrorController implements ErrorController  {
 
         @RequestMapping("/error")
