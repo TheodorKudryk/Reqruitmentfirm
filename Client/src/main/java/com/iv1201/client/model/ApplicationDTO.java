@@ -28,7 +28,7 @@ public class ApplicationDTO {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private final String end;
     
-    public ApplicationDTO(int competence, int experience, String start, String end) {
+    public ApplicationDTO(int competence, double experience, String start, String end) {
         this.competence = competence;
         this.experience = experience;
         this.start = start;
