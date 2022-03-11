@@ -218,8 +218,8 @@ public class DBHandler {
                 + "'years_of_experience': '" + application.getExperience() + "'"
                 + "}";
         StringBuilder content = dbAPICallPost("https://com-iv1201-server.herokuapp.com/addProfile", body, person.getToken());
-        /*if (!content.toString().contains("OK"))
-            return content.toString();*/
+        if (!content.toString().contains("OK"))
+            return content.toString();
         body = "{"
                 + "'person_id': '" + person.getId() + "',"
                 + "'from_date': '" + application.getStart() + "',"
