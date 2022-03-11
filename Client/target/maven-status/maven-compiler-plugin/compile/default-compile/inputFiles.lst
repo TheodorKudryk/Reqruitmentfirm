@@ -1,0 +1,16 @@
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\security\WebConfig.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\ClientApplication.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\model\Competence.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\controller\ResetAccountController.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\controller\ApplicantController.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\controller\RecruiterController.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\model\ApplicationDTO.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\security\CustomAuthenticationFailureHandler.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\model\Person.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\integration\DBHandler.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\security\SecurityConfiguration.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\security\CustomAuthenticationProvider.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\controller\UserUpdateController.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\controller\CustomErrorController.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\model\UserDTO.java
+C:\Users\theok\Downloads\iv1201-client-6f6e548794c1852eb155f0deebec75c509802a52\Client\src\main\java\com\iv1201\client\controller\LoginController.java
