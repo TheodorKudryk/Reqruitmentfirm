@@ -12,7 +12,7 @@
         <p th:if="${invalid}" class="error" th:text="#{resetAct.invalid}"></p>
         <p th:if="${error}" class="error" th:text="#{resetAct.error}"></p>
         <h1><span th:text="#{txt.userUpdate}" /></h1>
-        <form method="POST" action="/resetAccount">
+        <form method="POST" action="/changeLogin">
             <span th:text="#{txt.email}" /> <input type="text" name="email" id="email" required><br>
             <input type="hidden" name="action" value="login" >
             <input type="submit" value="update" id="updateBtn">

@@ -22,7 +22,7 @@ public class ResetAccountController {
      * @param model Used by Thymeleaf
      * @return view used
      */
-    @RequestMapping(value = "/resetAccount", method = RequestMethod.GET)
+    @RequestMapping(value = "/resetAccount")
     public String resetAccount(Model model){
         if (LoginController.isAuthenticated()) {
             return "redirect:startpage";
@@ -37,7 +37,7 @@ public class ResetAccountController {
      * @param userEmail The user resets based on email
      * @return the view with a message depending on how it went 
      */
-    @RequestMapping(value = "/resetAccount", method = RequestMethod.POST)
+    @RequestMapping(value = "/changeLogin")
     public String resetPassword(Model model, HttpServletRequest request, @RequestParam("email") String userEmail) {
         String serverMsg = "";
         try {
