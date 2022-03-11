@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CustomErrorController implements ErrorController  {
 
+    public CustomErrorController(){
+        System.out.println("Created CustomErrorController");
+    }
         @RequestMapping("/error")
         public String handleError() {
             if (isAuthenticated())
