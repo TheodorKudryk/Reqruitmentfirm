@@ -5,6 +5,7 @@ import static com.iv1201.client.controller.LoginController.isAuthenticated;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.web.servlet.error.ErrorController;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
  * front page with an error
  * @author Zarcez
  */
-@RestController
-@AutoConfigureAfter(CustomErrorController.class)
+@Controller
+@Configuration
 public class CustomErrorController implements ErrorController  {
 
     
