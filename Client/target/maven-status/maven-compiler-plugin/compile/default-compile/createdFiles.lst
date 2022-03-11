@@ -4,6 +4,7 @@ com\iv1201\client\integration\DBHandler$1.class
 com\iv1201\client\model\Person.class
 com\iv1201\client\controller\ResetAccountController.class
 com\iv1201\client\security\WebConfig.class
+.netbeans_automatic_build
 com\iv1201\client\integration\DBHandler.class
 com\iv1201\client\model\ApplicationDTO.class
 com\iv1201\client\security\CustomAuthenticationProvider.class
