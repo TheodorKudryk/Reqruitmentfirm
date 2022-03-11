@@ -43,7 +43,7 @@ public class ApplicationDTO {
     }
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)
-    public int getExperience() {
+    public double getExperience() {
         return experience;
     }
     
