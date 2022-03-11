@@ -20,8 +20,7 @@ public class ApplicationDTO {
     @Min(0)
     private final int competence;
     
-    @NotNull
-    @Min(0)
+    
     private final double experience;
     
     @DateTimeFormat(pattern = "yyyy-MM-dd")
