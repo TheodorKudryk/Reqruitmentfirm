@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Zarcez
  */
 @Controller
-@Configuration
 public class CustomErrorController implements ErrorController  {
 
     
