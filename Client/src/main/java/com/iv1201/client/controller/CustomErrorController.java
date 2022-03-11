@@ -16,8 +16,8 @@ public class CustomErrorController implements ErrorController  {
 
         @RequestMapping("/error")
         public String handleError() {
-            if (isAuthenticated())
-                return "redirect:/startpage?error";
+            /*if (isAuthenticated())
+                return "redirect:/startpage?error";*/
             return "redirect:/login?error";
     }
 }
