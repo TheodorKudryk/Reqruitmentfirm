@@ -22,7 +22,7 @@ public class ApplicationDTO {
     
     @NotNull
     @Min(0)
-    private final int experience;
+    private final double experience;
     
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private final String start;
