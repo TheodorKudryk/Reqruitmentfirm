@@ -28,7 +28,7 @@
                         <input type="hidden" name="username" th:attr="value=${username}">
                         <input type="submit" th:value="#{txt.apply}">
                     </form>
-                <span th:unless="${competence_profile.size()<3}">
+                <span th:unless="${competence_profile.length()<3}">
                     <h1>
                         <td th:text="#{txt.applied}"></td>
                     </h1>
