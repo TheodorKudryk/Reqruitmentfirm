@@ -15,12 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
  * front page with an error
  * @author Zarcez
  */
-@Controller
+@RestController
 public class CustomErrorController implements ErrorController  {
 
-    
         @RequestMapping("/error")
-        public String handleError(HttpServletRequest request) {
+        public String getErrorPath() {
             if (isAuthenticated())
                 return "redirect:/startpage?error";
             return "redirect:/login?error";
