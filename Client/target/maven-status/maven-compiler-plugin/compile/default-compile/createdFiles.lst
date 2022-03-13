@@ -14,5 +14,5 @@ com\iv1201\client\security\SecurityConfiguration.class
 com\iv1201\client\integration\DBHandler$2.class
 com\iv1201\client\ClientApplication.class
 com\iv1201\client\controller\ApplicantController.class
-com\iv1201\client\controller\CustomErrorController.class
 com\iv1201\client\security\CustomAuthenticationFailureHandler.class
+com\iv1201\client\controller\MyErrorController.class

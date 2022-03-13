@@ -2,7 +2,9 @@
 package com.iv1201.Client.controller;
 
 import static com.iv1201.client.controller.LoginController.isAuthenticated;
+import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.context.annotation.Configuration;
@@ -18,11 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyErrorController implements ErrorController{
 
-        @RequestMapping("/error")
-        public String getErrorPath() {
+        @RequestMapping("/error1")
+        public void getErrorPath(HttpServletResponse response, HttpServletRequest request) throws IOException {
             if (isAuthenticated())
-                return "redirect:/startpage?error";
-            return "redirect:/login?error";
+                 response.sendRedirect(request.getContextPath() +"/startpage?error");
+            else{
+                response.sendRedirect(request.getContextPath() +"/login?error");
+            }
     }
 }
 
