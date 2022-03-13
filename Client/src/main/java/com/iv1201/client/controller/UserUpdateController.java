@@ -23,7 +23,7 @@ public class UserUpdateController {
      * This is the controller for when the user first gets the page 
      * @param model used by Thymeleaf
      * @param token checks if the same token is in the database
-     * @return 
+     * @return to different views depending on the outcome
      */
     @RequestMapping(value = "/userUpdate", method = RequestMethod.GET)
     public String checkToken(Model model, String token){

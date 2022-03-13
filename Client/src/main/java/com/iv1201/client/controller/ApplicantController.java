@@ -25,7 +25,7 @@ public class ApplicantController {
     
     /**
      * The controller for where the sendApplication is sent to be checked before 
- it's sent to the database handler
+       it's sent to the database handler
      * @param applicationDTO the class with all the info for the sendApplication
      * @param bindingResult used for checking the values that was sent 
      * @param username the username of the current logged in applicant

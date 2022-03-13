@@ -27,11 +27,11 @@ public class DBHandler {
     private static final BCryptPasswordEncoder bcryptPasswordEndoder = new BCryptPasswordEncoder();
     
     /**
-     * 
-     * @param urlString
-     * @param body
-     * @return
-     * @throws ConnectException 
+     * Will call the database to gather and send information about the requested url
+     * @param urlString a string with the url to access the API
+     * @param body the data that's being sent to the API
+     * @return data depending of the requested function
+     * @throws ConnectException an exception used if the connection to the server is not available
      */
     private static StringBuilder dbAPICallPostAuth(String urlString, String body) throws ConnectException {
         try {
@@ -66,7 +66,13 @@ public class DBHandler {
            return null;
         }
     }
-    
+    /**
+     * Will call the database to gather and send information about the requested url
+     * @param urlString a string with the url to access the API
+     * @param body the data that's being sent to the API
+     * @param token authentication token used to identify the user.
+     * @return data depending of the requested function
+     */
     private static StringBuilder dbAPICallPost(String urlString, String body, String token) {
         StringBuilder content;
         try {
@@ -102,7 +108,12 @@ public class DBHandler {
             return content.append(ex);
         }
     }
-    
+    /**
+     * Will call the database to gather information about the requested url
+     * @param urlString a string with the url to access the API
+     * @param token authentication token used to identify the user.
+     * @return the requested information
+     */
     private static StringBuilder dbAPICallGet(String urlString, String token) {
         StringBuilder content;
         try {

@@ -42,10 +42,11 @@ public class LoginController {
     
     /**
      * Startpage for all users, depending on role user is sent to different views
-     * @param request 
+     * @param request the requested path with information about the users role
      * @param language Used for the loading competence
      * @param model Used by Thymeleaf
      * @param error Used if the user was sent here by an error
+     * @param invalid Used if the user was send here because of invalid information
      * @return the view used 
      */
     @RequestMapping(value = "/startpage")
