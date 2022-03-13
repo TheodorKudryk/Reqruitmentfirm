@@ -10,7 +10,7 @@ and open the template in the editor.
     </head>
     <body>
         <div th:text="#{txt.woopsie}"></div>
-        <form method="GET" th:action="@{/application}">
+        <form method="GET" th:action="@{/startpage}">
             <input type="hidden">
             <input type="submit" th:value="#{txt.returnToStartPage}">
         </form>
