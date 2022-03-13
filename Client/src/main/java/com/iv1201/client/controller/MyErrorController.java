@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyErrorController implements ErrorController{
 
-        @RequestMapping("/error1")
+        @RequestMapping("/error")
         public void getErrorPath(HttpServletResponse response, HttpServletRequest request) throws IOException {
             if (isAuthenticated())
                  response.sendRedirect(request.getContextPath() +"/startpage?error");
