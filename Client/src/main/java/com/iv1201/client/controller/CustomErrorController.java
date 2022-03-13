@@ -19,11 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class CustomErrorController implements ErrorController  {
 
     
-    public CustomErrorController(){
-        System.out.println("Created CustomErrorController");
-    }
         @RequestMapping("/error")
-        public String handleError() {
+        public String handleError(HttpServletRequest request) {
             if (isAuthenticated())
                 return "redirect:/startpage?error";
             return "redirect:/login?error";
