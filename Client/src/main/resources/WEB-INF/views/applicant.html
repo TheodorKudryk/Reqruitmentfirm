@@ -7,6 +7,7 @@
         <tbody>
             <td>
                 <p th:if="${unknownError}" class="error" th:text="#{start.error}"></p>
+                <p th:if="${invalid}" class="error" th:text="#{invalid.error}"></p>
                     <h1>
                         <td th:text="#{txt.welcome} "></td>
                         <td th:text="#{txt.apply}"></td>
@@ -17,7 +18,7 @@
                                 <option th:each="competence : ${competences}" th:value="${competence.id}" th:text="${competence.name}">
                                 </option>
                             </select><br>
-                        <span th:text="#{txt.yearOfExperience}" /> <input type="text" name="experience" id="experience"><br>
+                        <span th:text="#{txt.yearOfExperience}" /> <input type="number" name="experience" id="experience" required min="0"><br>
                         <span th:text="#{txt.timePeriod}" /> <br>
                         <span th:text="#{txt.begin}" /><input type="date" id="start" name="start"
                             value="2022-06-01"
