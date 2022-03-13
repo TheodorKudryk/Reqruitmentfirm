@@ -23,7 +23,7 @@ public class CustomErrorController implements ErrorController  {
         System.out.println("Created CustomErrorController");
     }
         @RequestMapping("/error")
-        public String handleError(HttpServletRequest request) {
+        public String handleError() {
             if (isAuthenticated())
                 return "redirect:/startpage?error";
             return "redirect:/login?error";
